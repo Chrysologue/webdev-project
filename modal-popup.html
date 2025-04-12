@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Modal Popup</title>
+  <meta name="description" content="A stylish JavaScript modal popup window with smooth animations and overlay effects." />
+  <meta name="author" content="Xyste Chrysologue" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/modal-popup.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>JavaScript Modal Popup</h1>
+    <p>Click the button below to open the modal window.</p>
+    <button id="openModal" class="btn-open">Open Modal</button>
+  </main>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <button id="closeModal" class="btn-close">&times;</button>
+      <h2>Hello, I'm a Modal!</h2>
+      <p>This modal popup is created with HTML, CSS, and JavaScript. It's responsive, elegant, and reusable.</p>
+    </div>
+  </div>
+
+  <script src="scripts/modal-popup.js"></script>
+</body>
+</html>
