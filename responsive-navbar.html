@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <meta name="description" content="A fully responsive navigation bar with a mobile-friendly hamburger menu built using HTML, CSS, and minimal JavaScript." />
+  <meta name="author" content="Xyste Chrysologue" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/responsive-navbar.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Xyste Dev</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Responsive Navigation Bar</h1>
+    <p>This page demonstrates a sleek responsive navigation bar with a hamburger menu for smaller screens. Resize the browser window to see it in action.</p>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
