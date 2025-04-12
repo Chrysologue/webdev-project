@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Mode Toggle</title>
+  <meta name="description" content="A smooth and accessible dark mode toggle built with HTML, CSS, and JavaScript. Switch themes in real-time with sleek transitions." />
+  <meta name="author" content="Xyste Chrysologue" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/dark-mode-toggle.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Dark Mode Toggle</h1>
+    <button id="toggleTheme" class="theme-toggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <p>This is a demonstration of a light/dark theme switcher using CSS and JavaScript. Click the toggle button to switch between modes.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 by Xyste Chrysologue</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('toggleTheme');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
