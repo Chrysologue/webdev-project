@@ -1,0 +1,93 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* CSS Variables for Theme Colors */
+  :root {
+    --background-light: #f5f5f5;
+    --background-dark: #2e2e2e;
+    --background-vibrant: #ffeb3b;
+  
+    --text-light: #333;
+    --text-dark: #e0e0e0;
+    --text-vibrant: #333333;
+  
+    --button-bg-light: #fff;
+    --button-bg-dark: #333;
+    --button-bg-vibrant: #ff5722;
+  
+    --button-text-light: #333;
+    --button-text-dark: #e0e0e0;
+    --button-text-vibrant: #ffffff;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: "Work Sans", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Default Light Mode */
+  .light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  /* Vibrant Mode */
+  .vibrant-mode {
+    background-color: var(--background-vibrant);
+    color: var(--text-vibrant);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: #d77a61; /* Terracotta accent */
+  }
+  
+  /* Button */
+  .theme-button {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border: 2px solid #d77a61; /* Border accent color */
+    padding: 0.8rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .theme-button:hover {
+    background-color: #f3e5f5;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+    color: #666;
+  }
+  
